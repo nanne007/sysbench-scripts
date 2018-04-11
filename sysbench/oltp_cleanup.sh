@@ -13,8 +13,6 @@ fi
 
 sysbench $conn_args \
          --threads=$threads  --report-interval=$report_interval --histogram=$histogram \
-         --table_size=$table_size --tables=$tables \
-         --auto_inc=${auto_inc:-on} \
-         --secondary_num=${secondary_num:-0} \
-         src/lua/oltp_common.lua prepare
+         --tables=$tables \
+         src/lua/oltp_common.lua cleanup
 

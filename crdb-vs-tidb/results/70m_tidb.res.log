@@ -1,0 +1,645 @@
+
+Thu Dec 28 18:11:30 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=on range_size=100 range_type=simple_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 17444.26 qps: 17444.26 (r/w/o: 17444.26/0.00/0.00) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 17436.51 qps: 17436.51 (r/w/o: 17436.51/0.00/0.00) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 17470.11 qps: 17470.11 (r/w/o: 17470.11/0.00/0.00) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 17447.98 qps: 17447.98 (r/w/o: 17447.98/0.00/0.00) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 17492.40 qps: 17492.40 (r/w/o: 17492.40/0.00/0.00) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 17351.32 qps: 17351.32 (r/w/o: 17351.32/0.00/0.00) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 17413.03 qps: 17413.03 (r/w/o: 17413.03/0.00/0.00) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 17502.98 qps: 17502.98 (r/w/o: 17502.98/0.00/0.00) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 17431.59 qps: 17431.59 (r/w/o: 17431.59/0.00/0.00) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+^Bd[ 50s ] thds: 256 tps: 17455.70 qps: 17455.70 (r/w/o: 17455.70/0.00/0.00) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 17401.42 qps: 17401.42 (r/w/o: 17401.42/0.00/0.00) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  57, 1000000, 1000000, 0, 0, 1000000, 1000000, 1000000, 0, 17444.54, 17444.54, 0.00, 0, 0.00, 1.37, 14.67, 28.67, 109.01, 14670624.29
+
+Thu Dec 28 18:12:28 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=off range_size=100 range_type=simple_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 16216.08 qps: 48696.20 (r/w/o: 16217.48/0.00/32478.72) lat (ms,95%): 29.72 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 16333.11 qps: 48984.32 (r/w/o: 16335.71/0.00/32648.61) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 16265.50 qps: 48812.71 (r/w/o: 16264.50/0.00/32548.20) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 16507.92 qps: 49511.15 (r/w/o: 16508.72/0.00/33002.43) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 16413.23 qps: 49249.48 (r/w/o: 16415.83/0.00/32833.66) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 16496.76 qps: 49491.28 (r/w/o: 16492.36/0.00/32998.92) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 16432.79 qps: 49297.96 (r/w/o: 16436.19/0.00/32861.77) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 16425.29 qps: 49273.86 (r/w/o: 16420.69/0.00/32853.18) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 16294.30 qps: 48884.11 (r/w/o: 16303.50/0.00/32580.61) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 16481.91 qps: 49430.33 (r/w/o: 16474.71/0.00/32955.62) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 16407.66 qps: 49228.57 (r/w/o: 16411.06/0.00/32817.52) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 16138.69 qps: 48427.26 (r/w/o: 16136.69/0.00/32290.58) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  61, 1000000, 1000000, 0, 2000000, 3000000, 1000000, 3000000, 0, 16364.69, 49094.06, 0.00, 0, 0.00, 1.41, 15.64, 28.67, 117.65, 15639063.32
+
+Thu Dec 28 18:13:29 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=on range_size=100 range_type=sum_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 17326.96 qps: 17326.96 (r/w/o: 17326.96/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 17310.60 qps: 17310.60 (r/w/o: 17310.60/0.00/0.00) lat (ms,95%): 30.26 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 17274.98 qps: 17274.98 (r/w/o: 17274.98/0.00/0.00) lat (ms,95%): 30.26 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 17278.67 qps: 17278.67 (r/w/o: 17278.67/0.00/0.00) lat (ms,95%): 29.72 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 17400.82 qps: 17400.82 (r/w/o: 17400.82/0.00/0.00) lat (ms,95%): 30.26 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 17232.04 qps: 17232.04 (r/w/o: 17232.04/0.00/0.00) lat (ms,95%): 29.72 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 17023.17 qps: 17023.17 (r/w/o: 17023.17/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 16874.67 qps: 16874.67 (r/w/o: 16874.67/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 17032.67 qps: 17032.67 (r/w/o: 17032.67/0.00/0.00) lat (ms,95%): 30.26 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 17032.23 qps: 17032.23 (r/w/o: 17032.23/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 16896.32 qps: 16896.32 (r/w/o: 16896.32/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  58, 1000000, 1000000, 0, 0, 1000000, 1000000, 1000000, 0, 17148.88, 17148.88, 0.00, 0, 0.00, 1.24, 14.92, 30.26, 132.39, 14924621.75
+
+Thu Dec 28 18:14:27 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=off range_size=100 range_type=sum_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 15790.18 qps: 47411.71 (r/w/o: 15793.38/0.00/31618.33) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 15890.64 qps: 47667.12 (r/w/o: 15889.64/0.00/31777.48) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 16117.09 qps: 48357.27 (r/w/o: 16118.69/0.00/32238.58) lat (ms,95%): 29.72 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 16269.99 qps: 48797.76 (r/w/o: 16267.39/0.00/32530.37) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 16487.14 qps: 49474.82 (r/w/o: 16487.54/0.00/32987.28) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 16684.39 qps: 50034.76 (r/w/o: 16685.79/0.00/33348.97) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 16735.72 qps: 50223.16 (r/w/o: 16734.12/0.00/33489.04) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 16850.97 qps: 50557.70 (r/w/o: 16851.57/0.00/33706.13) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 16796.94 qps: 50389.02 (r/w/o: 16801.74/0.00/33587.28) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 16732.57 qps: 50205.31 (r/w/o: 16734.17/0.00/33471.14) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 16548.48 qps: 49640.64 (r/w/o: 16541.68/0.00/33098.96) lat (ms,95%): 28.67 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 16592.50 qps: 49748.31 (r/w/o: 16591.70/0.00/33156.61) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  61, 1000000, 1000000, 0, 2000000, 3000000, 1000000, 3000000, 0, 16460.17, 49380.50, 0.00, 0, 0.00, 1.66, 15.55, 29.19, 285.51, 15548652.55
+
+Thu Dec 28 18:15:28 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=on range_size=100 range_type=order_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 15286.29 qps: 15286.29 (r/w/o: 15286.29/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 15273.98 qps: 15273.98 (r/w/o: 15273.98/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 15124.74 qps: 15124.74 (r/w/o: 15124.74/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 15130.55 qps: 15130.55 (r/w/o: 15130.55/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 15176.39 qps: 15176.39 (r/w/o: 15176.39/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 15189.80 qps: 15189.80 (r/w/o: 15189.80/0.00/0.00) lat (ms,95%): 30.81 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 15114.58 qps: 15114.58 (r/w/o: 15114.58/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 15281.43 qps: 15281.43 (r/w/o: 15281.43/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 15139.99 qps: 15139.99 (r/w/o: 15139.99/0.00/0.00) lat (ms,95%): 31.94 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 15038.80 qps: 15038.80 (r/w/o: 15038.80/0.00/0.00) lat (ms,95%): 31.94 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 15014.81 qps: 15014.81 (r/w/o: 15014.81/0.00/0.00) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 13923.34 qps: 13923.34 (r/w/o: 13923.34/0.00/0.00) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 14765.53 qps: 14765.53 (r/w/o: 14765.53/0.00/0.00) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  67, 1000000, 1000000, 0, 0, 1000000, 1000000, 1000000, 0, 15029.56, 15029.56, 0.00, 0, 0.00, 1.27, 17.03, 31.37, 532.85, 17028785.24
+
+Thu Dec 28 18:16:35 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=off range_size=100 range_type=order_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 13884.67 qps: 41693.77 (r/w/o: 13890.26/0.00/27803.51) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 14066.05 qps: 42195.34 (r/w/o: 14061.65/0.00/28133.70) lat (ms,95%): 31.94 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 14026.62 qps: 42073.87 (r/w/o: 14028.22/0.00/28045.64) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 13955.58 qps: 41857.93 (r/w/o: 13953.98/0.00/27903.95) lat (ms,95%): 33.12 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 13943.21 qps: 41848.03 (r/w/o: 13945.01/0.00/27903.02) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 13934.34 qps: 41794.63 (r/w/o: 13933.34/0.00/27861.29) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 13973.26 qps: 41941.78 (r/w/o: 13981.06/0.00/27960.72) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 13922.17 qps: 41735.50 (r/w/o: 13914.57/0.00/27820.93) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 13907.05 qps: 41740.15 (r/w/o: 13907.25/0.00/27832.90) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 13942.40 qps: 41833.20 (r/w/o: 13946.40/0.00/27886.80) lat (ms,95%): 31.37 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 13949.57 qps: 41831.50 (r/w/o: 13946.97/0.00/27884.54) lat (ms,95%): 31.94 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 13878.98 qps: 41647.15 (r/w/o: 13875.98/0.00/27771.17) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 13970.43 qps: 41919.70 (r/w/o: 13973.83/0.00/27945.87) lat (ms,95%): 31.94 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 13917.53 qps: 41743.99 (r/w/o: 13918.33/0.00/27825.66) lat (ms,95%): 32.53 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  72, 1000000, 1000000, 0, 2000000, 3000000, 1000000, 3000000, 0, 13944.17, 41832.50, 0.00, 0, 0.00, 1.42, 18.35, 32.53, 378.68, 18354278.62
+
+Thu Dec 28 18:17:47 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=on range_size=100 range_type=distinct_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 9331.97 qps: 9331.97 (r/w/o: 9331.97/0.00/0.00) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 9446.87 qps: 9446.87 (r/w/o: 9446.87/0.00/0.00) lat (ms,95%): 44.98 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 9582.52 qps: 9582.52 (r/w/o: 9582.52/0.00/0.00) lat (ms,95%): 44.98 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 9567.82 qps: 9567.82 (r/w/o: 9567.82/0.00/0.00) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 9611.82 qps: 9611.82 (r/w/o: 9611.82/0.00/0.00) lat (ms,95%): 41.85 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 9556.57 qps: 9556.57 (r/w/o: 9556.57/0.00/0.00) lat (ms,95%): 41.85 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 9377.59 qps: 9377.59 (r/w/o: 9377.59/0.00/0.00) lat (ms,95%): 44.98 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 9529.69 qps: 9529.69 (r/w/o: 9529.69/0.00/0.00) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 9609.97 qps: 9609.97 (r/w/o: 9609.97/0.00/0.00) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 9648.79 qps: 9648.79 (r/w/o: 9648.79/0.00/0.00) lat (ms,95%): 41.85 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 9640.35 qps: 9640.35 (r/w/o: 9640.35/0.00/0.00) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 9621.14 qps: 9621.14 (r/w/o: 9621.14/0.00/0.00) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 9641.89 qps: 9641.89 (r/w/o: 9641.89/0.00/0.00) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 9577.35 qps: 9577.35 (r/w/o: 9577.35/0.00/0.00) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 75s ] thds: 256 tps: 9638.83 qps: 9638.83 (r/w/o: 9638.83/0.00/0.00) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 256 tps: 9586.81 qps: 9586.81 (r/w/o: 9586.81/0.00/0.00) lat (ms,95%): 41.85 err/s: 0.00 reconn/s: 0.00
+[ 85s ] thds: 256 tps: 9598.79 qps: 9598.79 (r/w/o: 9598.79/0.00/0.00) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 256 tps: 9598.62 qps: 9598.62 (r/w/o: 9598.62/0.00/0.00) lat (ms,95%): 41.85 err/s: 0.00 reconn/s: 0.00
+[ 95s ] thds: 256 tps: 9606.42 qps: 9606.42 (r/w/o: 9606.42/0.00/0.00) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 256 tps: 9601.55 qps: 9601.55 (r/w/o: 9601.55/0.00/0.00) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+ 104, 1000000, 1000000, 0, 0, 1000000, 1000000, 1000000, 0, 9579.83, 9579.83, 0.00, 0, 0.00, 1.82, 26.72, 43.39, 436.26, 26717742.99
+
+Thu Dec 28 18:19:31 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 skip_trx=off range_size=100 range_type=distinct_ranges ./oltp_pk_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 9304.25 qps: 27960.31 (r/w/o: 9309.84/0.00/18650.46) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 9343.32 qps: 28024.96 (r/w/o: 9345.72/0.00/18679.24) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 9326.64 qps: 27967.12 (r/w/o: 9320.84/0.00/18646.28) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 9476.73 qps: 28448.79 (r/w/o: 9480.73/0.00/18968.06) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 9442.04 qps: 28321.71 (r/w/o: 9443.84/0.00/18877.87) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 9534.03 qps: 28605.30 (r/w/o: 9531.23/0.00/19074.06) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 9496.01 qps: 28484.44 (r/w/o: 9495.81/0.00/18988.63) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 9426.36 qps: 28282.88 (r/w/o: 9425.56/0.00/18857.32) lat (ms,95%): 42.61 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 9517.31 qps: 28539.94 (r/w/o: 9516.11/0.00/19023.83) lat (ms,95%): 41.85 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 9285.82 qps: 27872.07 (r/w/o: 9285.02/0.00/18587.05) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 9200.50 qps: 27600.90 (r/w/o: 9209.10/0.00/18391.80) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 9128.45 qps: 27391.14 (r/w/o: 9125.45/0.00/18265.69) lat (ms,95%): 44.98 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 9170.36 qps: 27505.87 (r/w/o: 9166.96/0.00/18338.91) lat (ms,95%): 44.98 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 9261.91 qps: 27789.12 (r/w/o: 9273.90/0.00/18515.21) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 75s ] thds: 256 tps: 9303.55 qps: 27897.25 (r/w/o: 9293.55/0.00/18603.70) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 256 tps: 9205.94 qps: 27619.81 (r/w/o: 9203.53/0.00/18416.27) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 85s ] thds: 256 tps: 9314.61 qps: 27928.04 (r/w/o: 9311.81/0.00/18616.23) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 256 tps: 9319.50 qps: 27975.11 (r/w/o: 9321.90/0.00/18653.20) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 95s ] thds: 256 tps: 9328.50 qps: 27972.30 (r/w/o: 9326.90/0.00/18645.40) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 256 tps: 9373.39 qps: 28131.17 (r/w/o: 9380.39/0.00/18750.78) lat (ms,95%): 44.17 err/s: 0.00 reconn/s: 0.00
+[ 105s ] thds: 256 tps: 9429.43 qps: 28291.88 (r/w/o: 9430.43/0.00/18861.46) lat (ms,95%): 43.39 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+ 107, 1000000, 1000000, 0, 2000000, 3000000, 1000000, 3000000, 0, 9345.01, 28035.03, 0.00, 0, 0.00, 1.99, 27.39, 43.39, 1932.46, 27389132.19
+
+Thu Dec 28 18:21:18 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=10000000 ./oltp_point_select.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 60807.99 qps: 60807.99 (r/w/o: 60807.99/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 62020.28 qps: 62020.28 (r/w/o: 62020.28/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 61728.06 qps: 61728.06 (r/w/o: 61728.06/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 61905.32 qps: 61905.32 (r/w/o: 61905.32/0.00/0.00) lat (ms,95%): 10.84 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 62288.32 qps: 62288.32 (r/w/o: 62288.32/0.00/0.00) lat (ms,95%): 10.84 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 62210.05 qps: 62210.05 (r/w/o: 62210.05/0.00/0.00) lat (ms,95%): 10.84 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 62480.89 qps: 62480.89 (r/w/o: 62480.89/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 62207.24 qps: 62207.24 (r/w/o: 62207.24/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 62614.93 qps: 62614.93 (r/w/o: 62614.93/0.00/0.00) lat (ms,95%): 10.84 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 62036.09 qps: 62036.09 (r/w/o: 62036.09/0.00/0.00) lat (ms,95%): 10.84 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 62163.81 qps: 62163.81 (r/w/o: 62163.81/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 62639.73 qps: 62639.73 (r/w/o: 62639.73/0.00/0.00) lat (ms,95%): 10.84 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 61713.13 qps: 61713.13 (r/w/o: 61713.13/0.00/0.00) lat (ms,95%): 11.04 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 62986.96 qps: 62986.96 (r/w/o: 62986.96/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 75s ] thds: 256 tps: 63063.46 qps: 63063.46 (r/w/o: 63063.46/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 256 tps: 63753.89 qps: 63753.89 (r/w/o: 63753.89/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 85s ] thds: 256 tps: 64048.75 qps: 64048.75 (r/w/o: 64048.75/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 256 tps: 64109.55 qps: 64109.55 (r/w/o: 64109.55/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 95s ] thds: 256 tps: 64081.85 qps: 64081.85 (r/w/o: 64081.85/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 256 tps: 64255.81 qps: 64255.81 (r/w/o: 64255.81/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 105s ] thds: 256 tps: 64422.01 qps: 64422.01 (r/w/o: 64422.01/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 110s ] thds: 256 tps: 64200.90 qps: 64200.90 (r/w/o: 64200.90/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 115s ] thds: 256 tps: 64337.07 qps: 64337.07 (r/w/o: 64337.07/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 120s ] thds: 256 tps: 64067.02 qps: 64067.02 (r/w/o: 64067.02/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 125s ] thds: 256 tps: 63622.09 qps: 63622.09 (r/w/o: 63622.09/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 130s ] thds: 256 tps: 63910.92 qps: 63910.92 (r/w/o: 63910.92/0.00/0.00) lat (ms,95%): 10.65 err/s: 0.00 reconn/s: 0.00
+[ 135s ] thds: 256 tps: 64226.93 qps: 64226.93 (r/w/o: 64226.93/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 140s ] thds: 256 tps: 63788.71 qps: 63788.71 (r/w/o: 63788.71/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 145s ] thds: 256 tps: 64365.95 qps: 64365.95 (r/w/o: 64365.95/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+[ 150s ] thds: 256 tps: 64798.04 qps: 64798.04 (r/w/o: 64798.04/0.00/0.00) lat (ms,95%): 10.27 err/s: 0.00 reconn/s: 0.00
+[ 155s ] thds: 256 tps: 63060.86 qps: 63060.86 (r/w/o: 63060.86/0.00/0.00) lat (ms,95%): 10.46 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+ 158, 10000000, 10000000, 0, 0, 10000000, 10000000, 10000000, 0, 63148.18, 63148.18, 0.00, 0, 0.00, 0.42, 4.05, 10.65, 1328.14, 40530523.63
+
+Thu Dec 28 18:23:57 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=500000 range_size=100 skip_trx=off ./oltp_read_only.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 2234.31 qps: 36168.05 (r/w/o: 31650.47/0.00/4517.58) lat (ms,95%): 147.61 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 2254.33 qps: 36048.30 (r/w/o: 31539.83/0.00/4508.46) lat (ms,95%): 144.97 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 2266.20 qps: 36270.05 (r/w/o: 31738.04/0.00/4532.01) lat (ms,95%): 144.97 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 2250.56 qps: 36013.33 (r/w/o: 31511.02/0.00/4502.32) lat (ms,95%): 142.39 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 2210.39 qps: 35328.40 (r/w/o: 30909.43/0.00/4418.98) lat (ms,95%): 147.61 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 2320.58 qps: 37152.29 (r/w/o: 32513.33/0.00/4638.96) lat (ms,95%): 142.39 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 2343.48 qps: 37512.40 (r/w/o: 32826.85/0.00/4685.55) lat (ms,95%): 139.85 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 2351.19 qps: 37571.27 (r/w/o: 32865.09/0.00/4706.18) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 2354.21 qps: 37721.34 (r/w/o: 33013.52/0.00/4707.82) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 2346.97 qps: 37534.51 (r/w/o: 32838.17/0.00/4696.34) lat (ms,95%): 139.85 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 2358.24 qps: 37746.92 (r/w/o: 33032.23/0.00/4714.69) lat (ms,95%): 139.85 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 2347.91 qps: 37554.39 (r/w/o: 32857.76/0.00/4696.62) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 2345.07 qps: 37502.39 (r/w/o: 32814.04/0.00/4688.35) lat (ms,95%): 139.85 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 2346.01 qps: 37547.41 (r/w/o: 32853.79/0.00/4693.63) lat (ms,95%): 139.85 err/s: 0.00 reconn/s: 0.00
+[ 75s ] thds: 256 tps: 2344.59 qps: 37504.40 (r/w/o: 32816.63/0.00/4687.78) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 256 tps: 2360.37 qps: 37765.24 (r/w/o: 33042.91/0.00/4722.33) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 85s ] thds: 256 tps: 2353.44 qps: 37685.06 (r/w/o: 32977.17/0.00/4707.88) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 256 tps: 2362.80 qps: 37780.45 (r/w/o: 33061.44/0.00/4719.01) lat (ms,95%): 139.85 err/s: 0.00 reconn/s: 0.00
+[ 95s ] thds: 256 tps: 2390.99 qps: 38264.45 (r/w/o: 33476.27/0.00/4788.18) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 256 tps: 2389.00 qps: 38212.25 (r/w/o: 33436.84/0.00/4775.41) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 105s ] thds: 256 tps: 2384.60 qps: 38160.17 (r/w/o: 33388.17/0.00/4772.00) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 110s ] thds: 256 tps: 2381.52 qps: 38134.99 (r/w/o: 33374.14/0.00/4760.85) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 115s ] thds: 256 tps: 2384.69 qps: 38134.40 (r/w/o: 33363.02/0.00/4771.38) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 120s ] thds: 256 tps: 2383.31 qps: 38121.17 (r/w/o: 33355.15/0.00/4766.02) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 125s ] thds: 256 tps: 2398.29 qps: 38405.82 (r/w/o: 33609.24/0.00/4796.58) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 130s ] thds: 256 tps: 2387.80 qps: 38149.34 (r/w/o: 33374.35/0.00/4774.99) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 135s ] thds: 256 tps: 2376.99 qps: 38056.44 (r/w/o: 33304.06/0.00/4752.38) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 140s ] thds: 256 tps: 2381.52 qps: 38112.92 (r/w/o: 33347.48/0.00/4765.44) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 145s ] thds: 256 tps: 2387.09 qps: 38192.87 (r/w/o: 33422.88/0.00/4769.98) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 150s ] thds: 256 tps: 2382.18 qps: 38102.86 (r/w/o: 33335.10/0.00/4767.76) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 155s ] thds: 256 tps: 2393.01 qps: 38258.83 (r/w/o: 33474.80/0.00/4784.03) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 160s ] thds: 256 tps: 2378.59 qps: 38100.87 (r/w/o: 33342.09/0.00/4758.78) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 165s ] thds: 256 tps: 2379.21 qps: 38066.10 (r/w/o: 33307.48/0.00/4758.61) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 170s ] thds: 256 tps: 2380.37 qps: 38112.54 (r/w/o: 33351.40/0.00/4761.14) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 175s ] thds: 256 tps: 2395.64 qps: 38282.08 (r/w/o: 33490.20/0.00/4791.89) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 180s ] thds: 256 tps: 2385.11 qps: 38166.94 (r/w/o: 33396.12/0.00/4770.82) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 185s ] thds: 256 tps: 2398.29 qps: 38388.08 (r/w/o: 33592.29/0.00/4795.78) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 190s ] thds: 256 tps: 2387.99 qps: 38205.11 (r/w/o: 33429.72/0.00/4775.39) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 195s ] thds: 256 tps: 2386.19 qps: 38188.46 (r/w/o: 33415.48/0.00/4772.98) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+[ 200s ] thds: 256 tps: 2382.96 qps: 38110.99 (r/w/o: 33344.87/0.00/4766.12) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 205s ] thds: 256 tps: 2381.24 qps: 38111.80 (r/w/o: 33348.13/0.00/4763.68) lat (ms,95%): 134.90 err/s: 0.00 reconn/s: 0.00
+[ 210s ] thds: 256 tps: 2378.72 qps: 38069.57 (r/w/o: 33315.72/0.00/4753.85) lat (ms,95%): 137.35 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+ 212, 500000, 7000000, 0, 1000000, 8000000, 500000, 8000000, 0, 2358.02, 37728.28, 0.00, 0, 0.00, 12.91, 108.55, 137.35, 567.13, 54273444.25
+
+Thu Dec 28 18:27:29 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 random_points=10 ./oltp_select_random_points.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 21122.87 qps: 21122.87 (r/w/o: 21122.87/0.00/0.00) lat (ms,95%): 33.72 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 21188.33 qps: 21188.33 (r/w/o: 21188.33/0.00/0.00) lat (ms,95%): 34.33 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 21047.61 qps: 21047.61 (r/w/o: 21047.61/0.00/0.00) lat (ms,95%): 33.72 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 20996.00 qps: 20996.00 (r/w/o: 20996.00/0.00/0.00) lat (ms,95%): 33.72 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 21068.40 qps: 21068.40 (r/w/o: 21068.40/0.00/0.00) lat (ms,95%): 33.12 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 20921.60 qps: 20921.60 (r/w/o: 20921.60/0.00/0.00) lat (ms,95%): 33.72 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 20932.03 qps: 20932.03 (r/w/o: 20932.03/0.00/0.00) lat (ms,95%): 33.72 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 21020.05 qps: 21020.05 (r/w/o: 21020.05/0.00/0.00) lat (ms,95%): 33.72 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 21119.72 qps: 21119.72 (r/w/o: 21119.72/0.00/0.00) lat (ms,95%): 33.12 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  48, 1000000, 1000000, 0, 0, 1000000, 1000000, 1000000, 0, 21034.00, 21034.00, 0.00, 0, 0.00, 1.00, 12.17, 33.72, 332.81, 12166171.61
+
+Thu Dec 28 18:28:16 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=100000 random_points=100 ./oltp_select_random_points.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 3543.27 qps: 3543.27 (r/w/o: 3543.27/0.00/0.00) lat (ms,95%): 176.73 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 3602.54 qps: 3602.54 (r/w/o: 3602.54/0.00/0.00) lat (ms,95%): 183.21 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 3569.01 qps: 3569.01 (r/w/o: 3569.01/0.00/0.00) lat (ms,95%): 173.58 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 3590.60 qps: 3590.60 (r/w/o: 3590.60/0.00/0.00) lat (ms,95%): 173.58 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 3679.80 qps: 3679.80 (r/w/o: 3679.80/0.00/0.00) lat (ms,95%): 183.21 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  28, 100000, 100000, 0, 0, 100000, 100000, 100000, 0, 3597.14, 3597.14, 0.00, 0, 0.00, 6.06, 71.05, 179.94, 943.91, 7105373.47
+
+Thu Dec 28 18:28:45 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=10000 random_points=1000 ./oltp_select_random_points.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 443.78 qps: 443.78 (r/w/o: 443.78/0.00/0.00) lat (ms,95%): 1352.03 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 485.83 qps: 485.83 (r/w/o: 485.83/0.00/0.00) lat (ms,95%): 1304.21 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 490.97 qps: 490.97 (r/w/o: 490.97/0.00/0.00) lat (ms,95%): 1304.21 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 474.22 qps: 474.22 (r/w/o: 474.22/0.00/0.00) lat (ms,95%): 1376.60 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  21, 10000, 10000, 0, 0, 10000, 10000, 10000, 0, 478.01, 478.01, 0.00, 0, 0.00, 88.59, 528.88, 1327.91, 4060.32, 5288806.77
+
+Thu Dec 28 18:29:07 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=100000 number_of_ranges=1 delta=10000 ./oltp_select_random_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 5242.59 qps: 5242.59 (r/w/o: 5242.59/0.00/0.00) lat (ms,95%): 77.19 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 5298.03 qps: 5298.03 (r/w/o: 5298.03/0.00/0.00) lat (ms,95%): 75.82 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 5282.60 qps: 5282.60 (r/w/o: 5282.60/0.00/0.00) lat (ms,95%): 75.82 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 73 tps: 4172.97 qps: 4172.97 (r/w/o: 4172.97/0.00/0.00) lat (ms,95%): 75.82 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  20, 100000, 100000, 0, 0, 100000, 100000, 100000, 0, 4878.71, 4878.71, 0.00, 0, 0.00, 1.23, 48.52, 75.82, 4987.34, 4851997.06
+
+Thu Dec 28 18:29:27 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=100000 number_of_ranges=5 delta=2000 ./oltp_select_random_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 6382.68 qps: 6382.68 (r/w/o: 6382.68/0.00/0.00) lat (ms,95%): 71.83 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 6349.84 qps: 6349.84 (r/w/o: 6349.84/0.00/0.00) lat (ms,95%): 74.46 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 6366.60 qps: 6366.60 (r/w/o: 6366.60/0.00/0.00) lat (ms,95%): 71.83 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  16, 100000, 100000, 0, 0, 100000, 100000, 100000, 0, 6200.87, 6200.87, 0.00, 0, 0.00, 1.63, 40.10, 73.13, 2159.57, 4010474.57
+
+Thu Dec 28 18:29:43 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=100000 number_of_ranges=10 delta=1000 ./oltp_select_random_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 4310.25 qps: 4310.25 (r/w/o: 4310.25/0.00/0.00) lat (ms,95%): 99.33 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 4378.38 qps: 4378.38 (r/w/o: 4378.38/0.00/0.00) lat (ms,95%): 101.13 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 4358.79 qps: 4358.79 (r/w/o: 4358.79/0.00/0.00) lat (ms,95%): 99.33 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 4361.21 qps: 4361.21 (r/w/o: 4361.21/0.00/0.00) lat (ms,95%): 99.33 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  23, 100000, 100000, 0, 0, 100000, 100000, 100000, 0, 4303.07, 4303.07, 0.00, 0, 0.00, 2.98, 58.71, 99.33, 1754.66, 5870777.90
+
+Thu Dec 28 18:30:07 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=100000 number_of_ranges=50 delta=200 ./oltp_select_random_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 800.85 qps: 800.85 (r/w/o: 800.85/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 832.45 qps: 832.45 (r/w/o: 832.45/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 822.20 qps: 822.20 (r/w/o: 822.20/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 822.00 qps: 822.00 (r/w/o: 822.00/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 821.00 qps: 821.00 (r/w/o: 821.00/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 820.00 qps: 820.00 (r/w/o: 820.00/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 815.20 qps: 815.20 (r/w/o: 815.20/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 805.00 qps: 805.00 (r/w/o: 805.00/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 811.80 qps: 811.80 (r/w/o: 811.80/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 821.60 qps: 821.60 (r/w/o: 821.60/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 812.40 qps: 812.40 (r/w/o: 812.40/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 811.60 qps: 811.60 (r/w/o: 811.60/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 816.20 qps: 816.20 (r/w/o: 816.20/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 806.40 qps: 806.40 (r/w/o: 806.40/0.00/0.00) lat (ms,95%): 539.71 err/s: 0.00 reconn/s: 0.00
+[ 75s ] thds: 256 tps: 805.60 qps: 805.60 (r/w/o: 805.60/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 256 tps: 813.20 qps: 813.20 (r/w/o: 813.20/0.00/0.00) lat (ms,95%): 559.50 err/s: 0.00 reconn/s: 0.00
+[ 85s ] thds: 256 tps: 802.00 qps: 802.00 (r/w/o: 802.00/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 256 tps: 812.00 qps: 812.00 (r/w/o: 812.00/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 95s ] thds: 256 tps: 802.40 qps: 802.40 (r/w/o: 802.40/0.00/0.00) lat (ms,95%): 559.50 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 256 tps: 816.60 qps: 816.60 (r/w/o: 816.60/0.00/0.00) lat (ms,95%): 559.50 err/s: 0.00 reconn/s: 0.00
+[ 105s ] thds: 256 tps: 813.40 qps: 813.40 (r/w/o: 813.40/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 110s ] thds: 256 tps: 810.60 qps: 810.60 (r/w/o: 810.60/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 115s ] thds: 256 tps: 811.20 qps: 811.20 (r/w/o: 811.20/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+[ 120s ] thds: 256 tps: 813.80 qps: 813.80 (r/w/o: 813.80/0.00/0.00) lat (ms,95%): 549.52 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+ 123, 100000, 100000, 0, 0, 100000, 100000, 100000, 0, 811.47, 811.47, 0.00, 0, 0.00, 30.50, 314.20, 549.52, 1954.95, 31419922.04
+
+Thu Dec 28 18:32:10 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=100000 number_of_ranges=100 delta=100 ./oltp_select_random_ranges.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 297.11 qps: 297.11 (r/w/o: 297.11/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 323.82 qps: 323.82 (r/w/o: 323.82/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 323.99 qps: 323.99 (r/w/o: 323.99/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 320.20 qps: 320.20 (r/w/o: 320.20/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 323.00 qps: 323.00 (r/w/o: 323.00/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 321.80 qps: 321.80 (r/w/o: 321.80/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 322.00 qps: 322.00 (r/w/o: 322.00/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 325.00 qps: 325.00 (r/w/o: 325.00/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 323.60 qps: 323.60 (r/w/o: 323.60/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 328.00 qps: 328.00 (r/w/o: 328.00/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 321.21 qps: 321.21 (r/w/o: 321.21/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 325.00 qps: 325.00 (r/w/o: 325.00/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 328.59 qps: 328.59 (r/w/o: 328.59/0.00/0.00) lat (ms,95%): 1191.92 err/s: 0.00 reconn/s: 0.00
+[ 70s ] thds: 256 tps: 321.41 qps: 321.41 (r/w/o: 321.41/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 75s ] thds: 256 tps: 317.40 qps: 317.40 (r/w/o: 317.40/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 80s ] thds: 256 tps: 323.79 qps: 323.79 (r/w/o: 323.79/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 85s ] thds: 256 tps: 317.81 qps: 317.81 (r/w/o: 317.81/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 90s ] thds: 256 tps: 319.18 qps: 319.18 (r/w/o: 319.18/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 95s ] thds: 256 tps: 315.81 qps: 315.81 (r/w/o: 315.81/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 100s ] thds: 256 tps: 317.21 qps: 317.21 (r/w/o: 317.21/0.00/0.00) lat (ms,95%): 1304.21 err/s: 0.00 reconn/s: 0.00
+[ 105s ] thds: 256 tps: 319.20 qps: 319.20 (r/w/o: 319.20/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 110s ] thds: 256 tps: 323.99 qps: 323.99 (r/w/o: 323.99/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 115s ] thds: 256 tps: 319.78 qps: 319.78 (r/w/o: 319.78/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 120s ] thds: 256 tps: 318.82 qps: 318.82 (r/w/o: 318.82/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 125s ] thds: 256 tps: 317.20 qps: 317.20 (r/w/o: 317.20/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 130s ] thds: 256 tps: 323.61 qps: 323.61 (r/w/o: 323.61/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 135s ] thds: 256 tps: 317.00 qps: 317.00 (r/w/o: 317.00/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 140s ] thds: 256 tps: 322.00 qps: 322.00 (r/w/o: 322.00/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 145s ] thds: 256 tps: 319.81 qps: 319.81 (r/w/o: 319.81/0.00/0.00) lat (ms,95%): 1304.21 err/s: 0.00 reconn/s: 0.00
+[ 150s ] thds: 256 tps: 318.98 qps: 318.98 (r/w/o: 318.98/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 155s ] thds: 256 tps: 316.21 qps: 316.21 (r/w/o: 316.21/0.00/0.00) lat (ms,95%): 1304.21 err/s: 0.00 reconn/s: 0.00
+[ 160s ] thds: 256 tps: 317.60 qps: 317.60 (r/w/o: 317.60/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 165s ] thds: 256 tps: 321.39 qps: 321.39 (r/w/o: 321.39/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 170s ] thds: 256 tps: 317.60 qps: 317.60 (r/w/o: 317.60/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 175s ] thds: 256 tps: 320.20 qps: 320.20 (r/w/o: 320.20/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 180s ] thds: 256 tps: 316.41 qps: 316.41 (r/w/o: 316.41/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 185s ] thds: 256 tps: 321.79 qps: 321.79 (r/w/o: 321.79/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 190s ] thds: 256 tps: 326.01 qps: 326.01 (r/w/o: 326.01/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 195s ] thds: 256 tps: 321.60 qps: 321.60 (r/w/o: 321.60/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 200s ] thds: 256 tps: 321.59 qps: 321.59 (r/w/o: 321.59/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 205s ] thds: 256 tps: 320.41 qps: 320.41 (r/w/o: 320.41/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 210s ] thds: 256 tps: 318.99 qps: 318.99 (r/w/o: 318.99/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 215s ] thds: 256 tps: 323.21 qps: 323.21 (r/w/o: 323.21/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 220s ] thds: 256 tps: 322.41 qps: 322.41 (r/w/o: 322.41/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 225s ] thds: 256 tps: 322.59 qps: 322.59 (r/w/o: 322.59/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 230s ] thds: 256 tps: 329.60 qps: 329.60 (r/w/o: 329.60/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 235s ] thds: 256 tps: 321.01 qps: 321.01 (r/w/o: 321.01/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 240s ] thds: 256 tps: 319.20 qps: 319.20 (r/w/o: 319.20/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 245s ] thds: 256 tps: 324.59 qps: 324.59 (r/w/o: 324.59/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 250s ] thds: 256 tps: 324.21 qps: 324.21 (r/w/o: 324.21/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 255s ] thds: 256 tps: 322.79 qps: 322.79 (r/w/o: 322.79/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 260s ] thds: 256 tps: 323.01 qps: 323.01 (r/w/o: 323.01/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 265s ] thds: 256 tps: 327.60 qps: 327.60 (r/w/o: 327.60/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 270s ] thds: 256 tps: 325.60 qps: 325.60 (r/w/o: 325.60/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 275s ] thds: 256 tps: 326.40 qps: 326.40 (r/w/o: 326.40/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 280s ] thds: 256 tps: 323.80 qps: 323.80 (r/w/o: 323.80/0.00/0.00) lat (ms,95%): 1213.57 err/s: 0.00 reconn/s: 0.00
+[ 285s ] thds: 256 tps: 325.80 qps: 325.80 (r/w/o: 325.80/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 290s ] thds: 256 tps: 319.80 qps: 319.80 (r/w/o: 319.80/0.00/0.00) lat (ms,95%): 1280.93 err/s: 0.00 reconn/s: 0.00
+[ 295s ] thds: 256 tps: 324.21 qps: 324.21 (r/w/o: 324.21/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 300s ] thds: 256 tps: 320.60 qps: 320.60 (r/w/o: 320.60/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+[ 305s ] thds: 256 tps: 324.00 qps: 324.00 (r/w/o: 324.00/0.00/0.00) lat (ms,95%): 1258.08 err/s: 0.00 reconn/s: 0.00
+[ 310s ] thds: 256 tps: 329.01 qps: 329.01 (r/w/o: 329.01/0.00/0.00) lat (ms,95%): 1235.62 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+ 311, 100000, 100000, 0, 0, 100000, 100000, 100000, 0, 321.39, 321.39, 0.00, 0, 0.00, 123.60, 794.88, 1258.08, 2603.81, 79488306.24
+
+Thu Dec 28 18:37:22 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 ./oltp_update_index.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 15196.96 qps: 15196.96 (r/w/o: 0.00/15196.96/0.00) lat (ms,95%): 36.89 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 14969.42 qps: 14969.42 (r/w/o: 0.00/14969.42/0.00) lat (ms,95%): 38.94 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 14271.94 qps: 14271.94 (r/w/o: 0.00/14271.94/0.00) lat (ms,95%): 39.65 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 14052.51 qps: 14052.51 (r/w/o: 0.00/14052.51/0.00) lat (ms,95%): 40.37 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 13991.80 qps: 13991.80 (r/w/o: 0.00/13991.80/0.00) lat (ms,95%): 40.37 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 14547.62 qps: 14547.62 (r/w/o: 0.00/14547.62/0.00) lat (ms,95%): 40.37 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 13763.56 qps: 13763.56 (r/w/o: 0.00/13763.56/0.00) lat (ms,95%): 41.10 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 14681.82 qps: 14681.82 (r/w/o: 0.00/14681.82/0.00) lat (ms,95%): 39.65 err/s: 0.00 reconn/s: 0.00
+[ 45s ] thds: 256 tps: 14763.98 qps: 14763.98 (r/w/o: 0.00/14763.98/0.00) lat (ms,95%): 38.94 err/s: 0.00 reconn/s: 0.00
+[ 50s ] thds: 256 tps: 13769.00 qps: 13769.00 (r/w/o: 0.00/13769.00/0.00) lat (ms,95%): 40.37 err/s: 0.00 reconn/s: 0.00
+[ 55s ] thds: 256 tps: 14487.61 qps: 14487.61 (r/w/o: 0.00/14487.61/0.00) lat (ms,95%): 39.65 err/s: 0.00 reconn/s: 0.00
+[ 60s ] thds: 256 tps: 14542.00 qps: 14542.00 (r/w/o: 0.00/14542.00/0.00) lat (ms,95%): 39.65 err/s: 0.00 reconn/s: 0.00
+[ 65s ] thds: 256 tps: 14165.20 qps: 14165.20 (r/w/o: 0.00/14165.20/0.00) lat (ms,95%): 39.65 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  69, 1000000, 0, 1000000, 0, 1000000, 1000000, 1000000, 0, 14392.14, 14392.14, 0.00, 0, 0.00, 1.80, 17.76, 39.65, 5764.07, 17761101.58
+
+Thu Dec 28 18:38:32 CST 2017    env report_interval=5 mysql_db=oltp_read_only tables=1 table_size=70000000 threads=256 events=1000000 ./oltp_update_non_index.sh
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 256
+Report intermediate results every 5 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+[ 5s ] thds: 256 tps: 22362.12 qps: 22362.12 (r/w/o: 0.00/22362.12/0.00) lat (ms,95%): 27.17 err/s: 0.00 reconn/s: 0.00
+[ 10s ] thds: 256 tps: 21556.84 qps: 21556.84 (r/w/o: 0.00/21556.84/0.00) lat (ms,95%): 27.17 err/s: 0.00 reconn/s: 0.00
+[ 15s ] thds: 256 tps: 23376.02 qps: 23376.02 (r/w/o: 0.00/23376.02/0.00) lat (ms,95%): 26.68 err/s: 0.00 reconn/s: 0.00
+[ 20s ] thds: 256 tps: 23336.93 qps: 23336.93 (r/w/o: 0.00/23336.93/0.00) lat (ms,95%): 27.17 err/s: 0.00 reconn/s: 0.00
+[ 25s ] thds: 256 tps: 23473.46 qps: 23473.46 (r/w/o: 0.00/23473.46/0.00) lat (ms,95%): 27.66 err/s: 0.00 reconn/s: 0.00
+[ 30s ] thds: 256 tps: 21801.99 qps: 21801.99 (r/w/o: 0.00/21801.99/0.00) lat (ms,95%): 28.16 err/s: 0.00 reconn/s: 0.00
+[ 35s ] thds: 256 tps: 23509.32 qps: 23509.32 (r/w/o: 0.00/23509.32/0.00) lat (ms,95%): 27.66 err/s: 0.00 reconn/s: 0.00
+[ 40s ] thds: 256 tps: 21355.89 qps: 21355.89 (r/w/o: 0.00/21355.89/0.00) lat (ms,95%): 29.19 err/s: 0.00 reconn/s: 0.00
+time_total(s), events, reads, writes, other, total, trans, queries, errors, trans/time_total(per sec), queries/time_total(per sec), errors/time_total(per sec), reconnects, reconnects/time_total(per sec), latency_min(ms), latency_avg(ms), latency_max(ms), latency_pct(ms), latency_sum(ms)
+  44, 1000000, 0, 1000000, 0, 1000000, 1000000, 1000000, 0, 22660.54, 22660.54, 0.00, 0, 0.00, 1.71, 11.29, 27.66, 636.93, 11293325.42
+
+
